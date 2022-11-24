@@ -19,42 +19,117 @@ body, html{background: var(--bianco); color:var(--nero);
         --grigio:#C6C6C6;
 
     }
-    .navbar{
-        --bs-navbar-hover-color: var(--celeste) !important;
-        --bs-navbar-color: var(--nero) !important;
-        --bs-navbar-active-color:var(--celeste) !important;
-    }
+    /**/
+
+
+    /*NAVBAR*/
+        .nav{
+            background-color: var(--bianco);
+            position: fixed;
+            top:0; 
+            left:0;
+            z-index: 9999;
+            width: 100%;
+        }
+        .navbar-content{
+            max-width: 1200px;width: 100%;
+            margin: 0 auto; 
+            display: flex;
+            justify-content: space-between;
+        }
+        .navbar-logo{
+            width: 50px; height: 50px;
+            padding: 5px;
+        }
+        .navbar-menu{
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        .navbar-menu li{
+            display: inline-block;
+        }
+        .navbar-menu li a{
+            color:var(--nero); 
+            opacity: 0.8;
+            display: block;
+            padding: 16px;
+            text-transform: uppercase;
+        }
+        .icon-hamburger{
+            display: none;
+        }
+
+        .active{
+            color: var(--celeste) !important;
+            font-weight: bold !important;
+        }
+
+        @media (max-width: 768px){
+            .navbar-menu{
+              position: absolute;
+              top:50px;
+              background-color: var(--bianco) ;
+              width: 100%;
+              height: 100vh;
+              height: 0vh;
+              overflow: hidden;
+              transition: all 1s cubic-bezier(.215, .61, .355, 1);
+              text-align: center;
+            }
+
+            .navbar-menu li{
+                width: 100%;
+                border-bottom: 1px solid #444
+            }
+            .menu-open .navbar-menu{
+                height: 100vh;
+                padding: 3%;
+            }
+
+            .icon-hamburger{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                color: var(--nero);
+            }
+
+        }
+
     /**/
     
     /*RULE*/
-    .section2,.section3,.section4,.section5{
-        width: 100%;   
-        height: auto;
-        z-index: 3;
-    }
-    .section1{
-        width: 100%;   
-        height: 100vh;
-        margin-top: 110px;
-        z-index: 0;
-    }
+        .section2,.section3,.section4,.section5{
+            width: 100%;   
+            height: auto;
+            z-index: 1;
+            margin-top: 200px;
+            scroll-margin-top: 9rem;
+        }
+        .section1{
+            width: 100%;   
+            height: 100vh;
+            z-index: 0;
+            display:flex; 
+            flex-wrap: wrap; 
+            justify-content: flex-start; 
+            align-items: center; 
+            align-content: center;
+        }
 
+        .centratutto{
+            text-align: center;
+        }
 
-
-    .centratutto{
-        text-align: center;
-    }
-
-    .flex-center{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-    }
-
-
+        .flex-center{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
     /**/
 
     .form-contatti{
@@ -78,7 +153,7 @@ body, html{background: var(--bianco); color:var(--nero);
         background: var(--rosa);
         padding: 20px;
         border-radius: 10px;
-        flex-basis: content ;
+        flex-basis: 25%;
     }
 
     .contattaci{
@@ -105,47 +180,59 @@ body, html{background: var(--bianco); color:var(--nero);
         background-size: cover;
     }
 
+    .freccia-dx-sx, .freccia-bott{
+        width: 100px; 
+        height: 100px;
+    }
+
 
 /* MOBILE*/
-@media (max-width: 767px) {
-    .font_grande{
-        font-size: 70px;
-    }
-    .font_normale{
-        font-size: 20px;
-    }
-    .font_piccolo{
-        font-size: 16px;
-    }
-    .show{
-        text-align:center;
-        background-color: var(--bianco);
-        width: 100%;
-    }
+    @media (max-width: 767px) {
+        .font_grande{
+            font-size: 50px;
+        }
+        .font_normale{
+            font-size: 20px;
+        }
+        .font_piccolo{
+            font-size: 16px;
+        }
+        .show{
+            text-align:center;
+            background-color: var(--bianco);
+            width: 100%;
+        }
 
-    .il_nostro_team{
-        width: 250px;
-        height: 100px;
-    }
+        .il_nostro_team{
+            width: 250px;
+            height: 100px;
+        }
 
-    .mission{
-        width: 250px;
-        height: 150px;
-    }
+        .mission{
+            width: 250px;
+            height: 150px;
+        }
 
-    div#altezza_navbar.container{
-        height: 100px;
-    }
-    .gap{
-        gap: 70px !important;
-    }
-}
+        div#altezza_navbar.container{
+            height: 100px;
+        }
+        .gap{
+            gap: 70px !important;
+        }
+        .team .team-member{
+            flex-basis: 100%;
+        }
+        .freccia-dx-sx{
+            display: none;
+        }
 
+    }
+/**/
 
 /* TABLET */
 @media (min-width: 767px) {
     .font_grande{
-        font-size: 90px;
+        font-size: 70px;
     }
     .font_normale{
         font-size: 24px;
@@ -174,6 +261,9 @@ body, html{background: var(--bianco); color:var(--nero);
     .gap{
         gap: 100px !important;
     }
+    .freccia-bott{
+        display: none;
+    }
 }
 
 /* DESKTOP */
@@ -182,11 +272,11 @@ body, html{background: var(--bianco); color:var(--nero);
         font-size: 126px;
     }
     .font_normale{
-        font-size: 36px;
+        font-size: 24px;
     }
     
     .font_piccolo{
-        font-size: 24px;
+        font-size: 20px;
     }
 
     .il_nostro_team{
@@ -204,6 +294,12 @@ body, html{background: var(--bianco); color:var(--nero);
     }
     .gap{
         gap: 150px !important;
+    }
+    .team .team-member{
+        flex-basis: 30%;
+    }
+    .freccia-bott{
+        display: none;
     }
 }
 /**/
