@@ -142,6 +142,7 @@ body, html{background: var(--bianco); color:var(--nero);
     .form-contatti{
         background-color: var(--bianco); 
         border: solid black ; 
+        width: 500px;
         height: auto;
         padding: 37px;
     }
@@ -231,6 +232,10 @@ body, html{background: var(--bianco); color:var(--nero);
         }
         .freccia-dx-sx{
             display: none;
+        }
+
+        .form-contatti{
+            width: 350px;
         }
 
     }
