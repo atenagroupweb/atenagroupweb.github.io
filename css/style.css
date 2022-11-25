@@ -139,6 +139,13 @@ body, html{background: var(--bianco); color:var(--nero);
         }
     /**/
 
+
+    .omino_lampadina{
+        width: 300px;
+        height: auto;
+
+    }
+
     .form-contatti{
         background-color: var(--bianco); 
         border: solid black ; 
@@ -165,8 +172,8 @@ body, html{background: var(--bianco); color:var(--nero);
     }
 
     .contattaci{
-        width: 200px;
-        height: 100px;
+        width: 250px;
+        height: auto;
     } 
 
     .space-between{
@@ -213,12 +220,12 @@ body, html{background: var(--bianco); color:var(--nero);
 
         .il_nostro_team{
             width: 250px;
-            height: 100px;
+            height: auto;
         }
 
         .mission{
             width: 250px;
-            height: 150px;
+            height: auto;
         }
 
         div#altezza_navbar.container{
@@ -232,6 +239,11 @@ body, html{background: var(--bianco); color:var(--nero);
         }
         .freccia-dx-sx{
             display: none;
+        }
+
+        .freccia-bott{
+            height: auto;
+            width: 25px;
         }
 
         .form-contatti{
@@ -254,12 +266,12 @@ body, html{background: var(--bianco); color:var(--nero);
     }
     .il_nostro_team{
         width: 500px;
-        height: 200px;
+        height: auto;
     }
 
     .mission{
         width: 300px;
-        height: 150px;
+        height: auto;
     }
 
     .show{
@@ -296,11 +308,11 @@ body, html{background: var(--bianco); color:var(--nero);
 
     .il_nostro_team{
         width: 700px;
-        height: 200px;
+        height: auto;
     }
     .mission{
         width: 400px;
-        height: 200px; 
+        height: auto;
     }
     
     .show{
