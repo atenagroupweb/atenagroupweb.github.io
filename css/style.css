@@ -137,6 +137,21 @@ body, html{background: var(--bianco); color:var(--nero);
             align-items: center;
             align-content: center;
         }
+
+        .link{
+            text-decoration: none;
+            color: #3D754A;
+        }
+
+        .link:hover{
+            color:#312e40;
+        }
+
+        .ntx{
+            text-decoration: none !important;
+            color: #000 !important;
+          }
+
     /**/
 
     .animoji{
