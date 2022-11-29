@@ -1,9 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="twitter:card" content="summary"/>
+    <meta property="og:title" content="atenaroupweb.it" />
+    <meta property="og:image" content="assets/atena-logo-extended.webp" />
+    <meta property="og:url" content="https://atenagroupweb.it" />
+    <meta property="og:description" content="Mettiamo la persona al centro e vediamo nel cambiamento i fattori abilitanti per offrire basi solide su cui sviluppare il proprio percorso." />
+    <meta name="description" content="Mettiamo la persona al centro e vediamo nel cambiamento i fattori abilitanti per offrire basi solide su cui sviluppare il proprio percorso."/> 
+    <meta name="author" content="https://tundrasoftware.it" />
+    <meta name="keywords" content="call center, atena group,  digital, teleselling, telemarketing,"/>
+
 
     <!-- CSS bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -12,7 +22,8 @@
 
     <!-- my CSS only -->
     <link rel="stylesheet" href="css/style.css">
-
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
     <title>Atenagroupweb.it</title>
 </head>
 <body data-bs-spy="scroll" data-bs-target="mainNav">
@@ -28,20 +39,31 @@
                 <li><a class="navbar-item" href="#chi_siamo">Chi siamo</a></li>
                 <li><a class="navbar-item" href="#il_team">Il nostro team</a></li>
                 <li><a class="navbar-item" href="#mission">Mission</a></li>
-                <li><a class="navbar-item" href="#contatti">Lavora con noi</a></li>
+                <li><a id="button_contatti" class="navbar-item" href="#contatti"> <button class="btn btn-cta">Lavora con noi</button> </a></li>
+
+                <!-- Icone Social-->
+                <li> 
+                    <div style="margin: 0 auto; display: flex; justify-content: center;">
+                        <a class="navbar-item" target="_blank" href="https://it-it.facebook.com/AtenaGroup20/"> <i class="bi bi-facebook"></i> </a>
+                        <a class="navbar-item" target="_blank" href="https://www.instagram.com/atenagroup/?hl=it"> <i class="bi bi-instagram"></i> </a>
+                        <a class="navbar-item" target="_blank" href="https://wa.me/3510215301/?text=La%20contatto%20per%20maggiori%20informazioni%20"> <i class="bi bi-whatsapp"></i> </a>
+                    </div> 
+                </li>
+
+
             </ul>
 
-            <div class="icon-hamburger">
+            <div class="icon-hamburger"><!-- Icona Hamburger-->
                 <i class="bi bi-list"></i>
             </div>
         </div>
     </nav>
 
         <!-- Sezione 1 -->
-        <section class="section1 masthead" id="page_top">
+        <section class="section1 masthead anim" id="page_top">
             <div class="container">  
 
-                <div>
+                <div class="watch">
                     <h1 class="font_grande">Think.</h1>
                     <h2 class="font_grande" style="color: var(--grigio) ;">Create.</h2>
                     <h3 class="font_grande" style="font-weight: bold;">Solution.</h3>
@@ -59,22 +81,23 @@
                 justify-content: flex-start; 
                 align-items: flex-start; 
                 align-content: stretch;">
-                    <p class="font_piccolo centratutto">La <b>passione</b> per la <b>comunicazione</b> ha <br>
+                    <p class="font_piccolo centratutto watch" style="text-align: justify;">
+                        La <b>passione</b> per la <b>comunicazione</b> ha<br>
                         portato, nel Settembre 2020, alla nascita di<br>
                         <b>Atena Group</b>.
-                        </p>
+                    </p>
                 </div>
 
                 <!-- cnt cnt -->
-                <div class="centratutto" 
+                <div class="centratutto " 
                 style="display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: flex-start;
                 align-content: stretch;">
-                    <img src="assets/frecciadx.webp" class="freccia-dx-sx mb-3 mt-3" alt="freccia_a_destra">
-                    <img src="assets/frecciabott.webp" class="freccia-bott mb-3 mt-3" alt="freccia_in_giu" >
+                    <img src="assets/frecciadx.webp" class="freccia-dx-sx mb-3 mt-3 watch" alt="freccia_a_destra">
+                    <img src="assets/frecciabott.webp" class="freccia-bott mb-3 mt-3 watch" alt="freccia_in_giu" >
                 </div>
 
                 <!-- cnt dx -->
@@ -84,7 +107,7 @@
                 justify-content: flex-end;
                 align-items: center;
                 align-content: stretch;">
-                    <p class="font_piccolo centratutto">La nostra realtà è in continua <b>evoluzione</b>, <br>
+                    <p class="font_piccolo centratutto watch">La nostra realtà è in continua <b>evoluzione</b>, <br>
                         impegnata nella vendita di servizi, prodotti,<br>
                         con offerte <b>innovative</b> e <b>coinvolgenti</b>.
                         </p>
@@ -98,8 +121,8 @@
                 justify-content: center;
                 align-items: flex-start;
                 align-content: stretch;">
-                    <img src="assets/frecciasx.webp" alt="freccia_a_sinistra" class="mb-3 mt-3 freccia-dx-sx">
-                    <img src="assets/frecciabott.webp" alt="freccia_in_giu" class="mb-3 mt-3 freccia-bott">
+                    <img src="assets/frecciasx.webp" alt="freccia_a_sinistra" class="mb-3 mt-3 freccia-dx-sx watch">
+                    <img src="assets/frecciabott.webp" alt="freccia_in_giu" class="mb-3 mt-3 freccia-bott watch">
                 </div>
 
                 <!-- sx top -->
@@ -109,7 +132,7 @@
                 justify-content: flex-start;
                 align-items: flex-end;
                 align-content: stretch;">
-                    <p class="font_piccolo centratutto">Mettiamo la <b>persona</b> al centro e vediamo<br>
+                    <p class="font_piccolo centratutto watch">Mettiamo la <b>persona</b> al centro e vediamo<br>
                         nel <b>cambiamento</b> i fattori abilitanti per offrire<br>
                         basi <b>solide</b> su cui sviluppare il proprio <b>percorso</b>.
                         </p>
@@ -122,12 +145,12 @@
         <!-- Sezione 3 -->
         <section class="section3" id="il_team">
 
-            <div class="centratutto ">
-                <img src="assets/il_nostro_team.webp" class="il_nostro_team mb-5" alt="il_nostro_team">
+            <div class="centratutto">
+                <img src="assets/il_nostro_team.webp" class="il_nostro_team mb-5 watch" alt="il_nostro_team">
             </div>
 
             <div class="team">
-                <div class="team-member" >
+                <div class="team-member watch" >
                     <div>
                         <img src="/assets/team.png" class="animoji mb-2" alt="animoji">
                         <h4 class="font_normale fw-bold">Sharon Irollo</h4>
@@ -136,7 +159,7 @@
                     </div>
                 </div>
 
-                <div class="team-member">
+                <div class="team-member watch">
                     <div>
                         <img src="/assets/team.png" class="animoji mb-2" alt="animoji">
                         <h4 class="font_normale fw-bold">Gianluca Cocchia</h4>
@@ -145,7 +168,7 @@
                     </div>
                 </div>
 
-                <div class="team-member" >
+                <div class="team-member watch" >
                     <div>
                         <img src="/assets/team.png" class="animoji mb-2" alt="animoji">
                         <h4 class="font_normale fw-bold">Antonella Tagliente</h4>
@@ -154,7 +177,7 @@
                     </div>
                 </div>
 
-                <div class="team-member" >
+                <div class="team-member watch" >
                     <div>
                         <img src="/assets/team.png" class="animoji mb-2" alt="animoji">
                         <h4 class="font_normale fw-bold">Letizia Regalbuto</h4>
@@ -163,7 +186,7 @@
                     </div>
                 </div>
 
-                <div class="team-member">
+                <div class="team-member watch">
                     <div>
                         <img src="/assets/team.png" class="animoji mb-2" alt="animoji">
                         <h4 class="font_normale fw-bold">Adele Manna</h4>
@@ -175,38 +198,41 @@
         </section>
         
         <!-- Sezione 4 -->
-        <section class="section4" id="mission">
+        <section class="section4 container" id="mission">
 
             <div class="flex-center gap" style="flex-wrap: wrap-reverse;">
                 <div class="centratutto">
-                    <img src="assets/insieme.webp" class="mission mb-3" alt="insieme">
-                    <p style="text-align: justify-content;">Atena Group adotta un approccio dinamico <br>
-                         nella gestione delle risorse rendendole flessibili e predisposte al cambiamento.<br>
-                          Offre un’opportunità di ampliamento delle conoscenze e di sviluppo relazionale.<br>
-                          <b> Consapevole del valore delle relazioni di lungo termine, <br>
-                           nonché le sfide che risiedono nel gestire il rapporto umano.</b>
+                    <img src="assets/insieme.webp" class="mission mb-3 watch" alt="insieme">
+                    <p class="font_piccolo centratutto watch" style="width: 500px; height: 300px;">
+                        Atena Group adotta un approccio dinamico nella gestione
+                        delle risorse rendendole flessibili e predisposte al cambiamento.
+                        Offre un’opportunità di ampliamento delle conoscenze 
+                        e di sviluppo relazionale.<b>Consapevole del 
+                        valore delle relazioni di lungo termine, nonché 
+                        le sfide che risiedono nel gestire il rapporto umano.</b>
                     </p>
                 </div>
 
                 <div class="centratutto">
-                    <img src="assets/omino_lampadina.webp" class="omino_lampadina" alt="omino_lampadina">
+                    <img src="assets/omino_lampadina.webp" class="omino_lampadina watch" alt="omino_lampadina">
                 </div>
             </div>
 
             <div class="flex-center gap" style="margin-top: 50px; ">
-
                 <div class="centratutto">
-                    <img src="assets/puzzle.webp" class="omino_lampadina" alt="puzzle">
+                    <img src="assets/puzzle.webp" class="omino_lampadina watch" alt="puzzle">
                 </div>
 
-                <div class="centratutto">
-                    <img src="assets/insieme.webp" class="mission mb-3" alt="atena_cambiamento">
-                    <p style="text-align: justify-content;"> Investe sui percorsi professionali scommettendo <br>
-                         sulla capacità di affrontare nuove sfide. <b>Il team di professionisti<br>
-                          affianca i clienti in ogni fase del processo di ACQUISTO</b>.<br>
-                           La forte specializzazione nel mercato, i servizi innovativi<br>
-                            e una buona gestione del capitale umano sono i punti di forza <br>
-                            che hanno permesso di crescere rapidamente e diventare leader nel proprio settore.
+                <div class="centratutto ">
+                    <img src="assets/insieme.webp" class="mission mb-3 watch" alt="atena_cambiamento">
+                    <p class="font_piccolo watch centratutto" style="width: 500px; height: 300px;">
+                        Investe sui percorsi professionali scommettendo
+                        sulla capacità di affrontare nuove sfide. <b>Il team di professionisti
+                        affianca i clienti in ogni fase del processo di ACQUISTO</b>.
+                        La forte specializzazione nel mercato, i servizi innovativi
+                        e una buona gestione del capitale umano sono i punti di forza 
+                        che hanno permesso di crescere rapidamente
+                         e diventare leader nel proprio settore.
                     </p>
                 </div>
             </div>
@@ -217,7 +243,7 @@
             <div style="background-color: var(--rosa);  width: 100%; height: auto;">
                 <div class="space-between gap">
 
-                    <div class="centratutto mt-5">
+                    <div class="centratutto mt-5 watch form-contatti">
                         <div class="mb-2"> 
                             <h4 class="font_normale fw-bold">Telefono</h4> 
                             <p class="font_piccolo"><a class="ntx" target="_blank" href="tel:+393510215301">3510215301</a></p>
@@ -230,11 +256,11 @@
 
                         <div>              
                             <h4 class="font_normale fw-bold">Maps</h4> 
-                            <p class="font_piccolo"><a class="ntx" target="_blank" href="https://g.page/atenagroupcallcenter?share">Via P. Picasso, 28, <br>San Marcellino (CE)</a></p> 
+                            <p class="font_piccolo"><a class="ntx" target="_blank" href="https://g.page/atenagroupcallcenter?share">Via P. Picasso, 28, San Marcellino (CE)</a></p> 
                         </div>
                     </div>
 
-                    <div>
+                    <div class="watch">
                         <form target="_blank" action="https://formsubmit.co/gaudierovincenzo00@gmail.com" method="POST">
                             <div class="form-contatti">
                                 <div class="centratutto"> <img src="assets/contattaci.webp" class="contattaci mb-5" alt="contattaci"> </div>
@@ -254,7 +280,7 @@
                                 </div>
 
                                 <div class="centratutto">
-                                    <button type="submit" class="btn btn-lg btn-dark mt-3" style="height: auto; width:100%;" >Invia </button>
+                                    <button type="submit" class="btn btn-cta mt-3" style="height: auto; width:100%;" >Invia </button>
                                 </div>
                             </div>  
                         </form>
@@ -263,16 +289,11 @@
             </div>
         </section>
 
-        <footer class="flex-center my-3">
-            <p class="font_piccolo"> 
-                <b>©</b> 2022 - <b>Atena Group</b> Via P. Picasso, 28, San Marcellino (CE) - powered by <a class="" href="https://tundrasoftware.it">TundraSoftware.it</a> 
-            </p>
+        <footer class="flex-center my-3 container">
+                <p class="font_piccolo centratutto"> 
+                    <b>©</b> 2022 - <b>Atena Group</b> Via P. Picasso, 28, San Marcellino (CE) - powered by <a class="link" href="https://tundrasoftware.it">TundraSoftware.it</a> 
+                </p>
         </footer>
-
-
-
-
-
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
