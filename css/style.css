@@ -257,6 +257,11 @@ body, html{background: var(--bianco); color:var(--nero);
         height: 100px;
     }
 
+    .paragrafo_piccolo{
+        max-width: 500px;
+        height: auto;
+    }
+
 
 /* MOBILE*/
     @media (max-width: 767px) {
@@ -294,8 +299,6 @@ body, html{background: var(--bianco); color:var(--nero);
 
         .team .team-member{
             flex-basis: 100%;
-            width: 250px; height: 250px;
-
         }
 
         .freccia-dx-sx{
@@ -311,6 +314,10 @@ body, html{background: var(--bianco); color:var(--nero);
             width: 350px;
         }
 
+        .paragrafo_piccolo{
+            max-width: 300px;
+            height: auto;
+        }
     }
 /**/
 
@@ -349,6 +356,7 @@ body, html{background: var(--bianco); color:var(--nero);
     .freccia-bott{
         display: none;
     }
+    
 }
 
 /* DESKTOP */
