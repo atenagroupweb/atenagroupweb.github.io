@@ -33,7 +33,7 @@
    }
 
    // observer
-   var observer = new IntersectionObserver(callback, { threshold: 0.7 } );
+   var observer = new IntersectionObserver(callback, { threshold: 0.3 } );
 
    // apply
    elements_to_watch.forEach((element) => {
