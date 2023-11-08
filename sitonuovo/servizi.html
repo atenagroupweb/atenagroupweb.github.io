@@ -3,11 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Untree.co">
   <link rel="shortcut icon" href="favicon.ico">
 
-  <meta name="description" content="" />
-  <meta name="keywords" content="bootstrap, bootstrap4" />
+  <meta name="description" content="Esplora i servizi di eccellenza offerti da Atena Group a San Marcellino, CE. Siamo specializzati nella vendita di contratti di luce e gas su misura per le esigenze dei nostri clienti. I nostri servizi comprendono telemarketing professionale, assistenza clienti personalizzata e offerte energetiche competitive. Scopri come possiamo aiutarti a ottimizzare i costi energetici e migliorare la tua esperienza nel settore energetico. Affidati a noi per soluzioni affidabili ed efficienti.">
 
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
@@ -69,128 +67,225 @@
   <div class="pricing-section">
     <div class="container">
       <div class="section-title text-center mb-5" data-aos="fade-up" data-aos-delay="0">
-        <h2 class="heading font-weight-bold mb-5">Servizi Da Offrire</h2>
+        <h2 class="heading font-weight-bold mb-5">Atena Servizi</h2>
 
         <div class="switch-plan">
           
           <div class="d-inline-flex align-items-center">
-            <div class="period">Aziende</div>
-            <a href="#" class="period-toggle js-period-toggle"></a>
-            <div class="period"><span class="mr-2">Privati</span></div>
+            <div class="period">Privati</div>
+            <button id="toggleButton" href="#" class="period-toggle js-period-toggle"></button>
+            <div class="period"><span class="mr-2">Aziende</span></div>
           </div>
 
         </div>
       </div>
+
+      <!-- Pulsante Acceso-->
+      <div id="elementOn" style="display: none;">
+  
+        <div class="row">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="pricing-item ">
+              <h3>Competenza nel Tuo settore</h3>
+              <div class="description">
+                <p>ATENA Group vanta una vasta esperienza e competenza nel settore, che ci permette di comprendere a fondo i tuoi servizi e le esigenze dei tuoi potenziali clienti.</p>
+              </div>
+              <div class="mb-4 d-block">
+                <div class="price-wrap">
+                  <div>$29</div>
+                </div>
+              </div>
+              <div class="description">
+                <p>Questo ci consente di comunicare in modo efficace, presentando i tuoi servizi in modo convincente e rispondendo a domande e obiezioni con competenza.</p>
+              </div>
+              <div>
+                <br>
+                <a href="#" class="btn btn-primary">Get Started</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item active">
+              <h3>Eccellenza nell'Assistenza Clienti</h3>
+              <div class="description">
+                <p>La nostra priorità è la massima soddisfazione del cliente. Abbiamo un team altamente qualificato e orientato al servizio che garantisce che ogni interazione sia professionale, cortese e risolutiva.</p>
+              </div>
+              <div class="mb-4 d-block">
+                <div class="price-wrap">
+                  <div>$29</div>
+                </div>
+              </div>
+              <div class="description">
+                <p>Ciò contribuisce a creare una percezione positiva dei tuoi servizi tra i potenziali clienti e li incoraggia a considerare seriamente la tua offerta.</p>
+              </div>
+              <div>
+                <a href="#" class="btn btn-primary">Get Started</a>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-item ">
+              <h3>Tecnologie All'Avanguardia e Personalizzazione</h3>
+              <div class="description">
+                <p>Utilizziamo tecnologie all'avanguardia per migliorare l'efficienza delle nostre operazioni. Inoltre, offriamo servizi altamente personalizzati che si adattano alle tue esigenze specifiche.</p>
+              </div>
+              <div class="period-change mb-4 d-block">
+                <div class="price-wrap">
+                  <div>$29</div>
+                </div>
+              </div>
+              <div class="description">
+                <p>Questo significa che puoi aspettarti un servizio su misura che massimizza l'efficacia della promozione dei tuoi servizi, aumentando le possibilità di conversione e vendita.</p>
+              </div>
+              <div>
+                <a href="#" class="btn btn-primary">Get Started</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-title text-center mb-5" data-aos="fade-up" data-aos-delay="0">
+            <p class=" mb-5">Scegliendo Atena Group come partner, avrai la certezza di avere qualcosa di affidabile che lavorerà istantaneamente per promuovere i tuoi servizi in modo efficace e professionale.</p>
+          </div>
+        </div>
+      </div>
       
-
-      <div class="row">
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
-          <div class="pricing-item ">
-            <h3>Basic</h3>
-            <div class="description">
-              <p>Far far away, behind the word mountains</p>
-            </div>
-            <div class="period-change mb-4 d-block">
-              <div class="price-wrap">
-                <div class="price">
-                  <div>
-                    <div>$29</div>
-                    <div>$299</div>
+      <!-- Pulsante Spento-->
+      <div id="elementOff">
+        Elemento spento
+        <div class="row">
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+            <div class="pricing-item ">
+              <h3>Basic</h3>
+              <div class="description">
+                <p>Far far away, behind the word mountains</p>
+              </div>
+              <div class="period-change mb-4 d-block">
+                <div class="price-wrap">
+                  <div class="price">
+                    <div>
+                      <div>$29</div>
+                      <div>$299</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-inline-flex align-items-center text-center period-wrap">
+                  <div class="d-inline-block mr-1">Per</div>
+                  <div class="d-block text-left period">
+                    <div>
+                      <div>Month</div>
+                      <div>Year</div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="d-inline-flex align-items-center text-center period-wrap">
-                <div class="d-inline-block mr-1">Per</div>
-                <div class="d-block text-left period">
-                  <div>
-                    <div>Month</div>
-                    <div>Year</div>
-                  </div>
-                </div>
+              <ul class="list-unstyled mb-4">
+                <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Far far away, behind the word mountains</span></li>
+                <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Far far away, behind the word mountains</span></li>
+              </ul>
+              <div>
+                <a href="#" class="btn btn-primary">Get Started</a>
               </div>
-            </div>
-            <ul class="list-unstyled mb-4">
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Far far away, behind the word mountains</span></li>
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Far far away, behind the word mountains</span></li>
-            </ul>
-            <div>
-              <a href="#" class="btn btn-primary">Get Started</a>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
-          <div class="pricing-item active">
-            <h3>Advanced</h3>
-            <div class="description">
-              <p>Far far away, behind the word mountains</p>
-            </div>
-            <div class="period-change mb-4 d-block">
-              <div class="price-wrap">
-                <div class="price">
-                  <div>
-                    <div>$49</div>
-                    <div>$599</div>
+  
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing-item active">
+              <h3>Advanced</h3>
+              <div class="description">
+                <p>Far far away, behind the word mountains</p>
+              </div>
+              <div class="period-change mb-4 d-block">
+                <div class="price-wrap">
+                  <div class="price">
+                    <div>
+                      <div>$49</div>
+                      <div>$599</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-inline-flex align-items-center text-center period-wrap">
+                  <div class="d-inline-block mr-1">Per</div>
+                  <div class="d-block text-left period">
+                    <div>
+                      <div>Month</div>
+                      <div>Year</div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="d-inline-flex align-items-center text-center period-wrap">
-                <div class="d-inline-block mr-1">Per</div>
-                <div class="d-block text-left period">
-                  <div>
-                    <div>Month</div>
-                    <div>Year</div>
-                  </div>
-                </div>
+              <ul class="list-unstyled mb-4">
+                <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Far far away, behind the word mountains</span></li>
+                <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Far far away, behind the word mountains</span></li>
+              </ul>
+              <div>
+                <a href="#" class="btn btn-primary">Get Started</a>
               </div>
-            </div>
-            <ul class="list-unstyled mb-4">
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Far far away, behind the word mountains</span></li>
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Far far away, behind the word mountains</span></li>
-            </ul>
-            <div>
-              <a href="#" class="btn btn-primary">Get Started</a>
             </div>
           </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="pricing-item ">
-            <h3>Premium</h3>
-            <div class="description">
-              <p>Far far away, behind the word mountains</p>
-            </div>
-            <div class="period-change mb-4 d-block">
-              <div class="price-wrap">
-                <div class="price">
-                  <div>
-                    <div>$99</div>
-                    <div>$1,999</div>
+  
+          <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing-item ">
+              <h3>Premium</h3>
+              <div class="description">
+                <p>Far far away, behind the word mountains</p>
+              </div>
+              <div class="period-change mb-4 d-block">
+                <div class="price-wrap">
+                  <div class="price">
+                    <div>
+                      <div>$99</div>
+                      <div>$1,999</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-inline-flex align-items-center text-center period-wrap">
+                  <div class="d-inline-block mr-1">Per</div>
+                  <div class="d-block text-left period">
+                    <div>
+                      <div>Month</div>
+                      <div>Year</div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="d-inline-flex align-items-center text-center period-wrap">
-                <div class="d-inline-block mr-1">Per</div>
-                <div class="d-block text-left period">
-                  <div>
-                    <div>Month</div>
-                    <div>Year</div>
-                  </div>
-                </div>
+              <ul class="list-unstyled mb-4">
+                <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Far far away, behind the word mountains</span></li>
+                <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Far far away, behind the word mountains</span></li>
+              </ul>
+              <div>
+                <a href="#" class="btn btn-primary">Get Started</a>
               </div>
-            </div>
-            <ul class="list-unstyled mb-4">
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Far far away, behind the word mountains</span></li>
-              <li class="d-flex"><span class="feather-check-square mr-2 mt-1"></span><span>Far far away, behind the word mountains</span></li>
-            </ul>
-            <div>
-              <a href="#" class="btn btn-primary">Get Started</a>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+
+
+<script>
+  const toggleButton = document.getElementById("toggleButton");
+  const statusCard = document.getElementById("statusCard");
+  const elementOn = document.getElementById("elementOn");
+  const elementOff = document.getElementById("elementOff");
+  let isToggled = false;
+
+  toggleButton.addEventListener("click", () => {
+    isToggled = !isToggled;
+    if (isToggled) {
+      elementOn.style.display = "block";
+      elementOff.style.display = "none";
+      // Esegue le azioni  quando il pulsante è premuto e lo stato è acceso
+    } else {
+      elementOn.style.display = "none";
+      elementOff.style.display = "block";
+      // Esegue le azioni desiderate quando il pulsante è premuto e lo stato è spento
+    }
+  });
+</script>
 
   <!-- MEMORIAL -->
   <div class="site-section overlay site-cover-2" style="background-image: url('images/Home-min.webp')">
@@ -204,22 +299,26 @@
     </div>
   </div>
 
-  <!-- FOOTER -->
-  <div class="site-footer">
+   <!-- FOOTER -->
+   <div class="site-footer">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col-lg-4">
           <div class="widget">
             <h3>About</h3>
-            <p>Siamo in continua evoluzione, sempre pronta ad affrontare le sfide e le opportunità offerte dal settore del Call Center.</p>
+            <p>
+              Siamo costantemente in evoluzione <br>
+              pronti a cogliere le sfide e le opportunità <br>
+              nel dinamico settore delle telecomunicazioni.
+            </p>           
           </div>
           <div class="widget">
             <h3>Social</h3>
             <ul class="social list-unstyled">
-              <li><a href="#"><span class="bi bi-whatsapp"></span></a></li>
-              <li><a href="#"><span class="bi bi-instagram"></span></a></li>
-              <li><a href="#"><span class="bi bi-facebook"></span></a></li>
-              <li><a href="#"><span class="bi bi-tiktok"></span></a></li>
+              <li><a href="https://wa.me/3510215301/?text=Buon%20Giorno%20,%20la%20contatto%20per%20maggiori%20informazioni%20"><span class="bi bi-whatsapp"></span></a></li>
+              <li><a href="https://www.instagram.com/atenagroup/?hl=it"><span class="bi bi-instagram"></span></a></li>
+              <li><a href="https://it-it.facebook.com/AtenaGroupweb/"><span class="bi bi-facebook"></span></a></li>
+              <li><a href="https://www.tiktok.com/@atenagroup?_t=8hB71nHgDVA&_r=1"><span class="bi bi-tiktok"></span></a></li>
             </ul>
           </div>
         </div>
@@ -233,20 +332,20 @@
             <div class="col-6 col-sm-6 col-md-4">
               <div class="widget">
                 <ul class="links list-unstyled">
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Chi Siamo</a></li>
-                  <li><a href="#">Formazione</a></li>
-                  <li><a href="#">Contattaci</a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">Chi Siamo</a></li>
+                  <li><a href="servizi.html">Servizi</a></li>
+                  <li><a href="contact.html">Contattaci</a></li>
                 </ul>
               </div>
             </div>
             <div class="col-6 col-sm-6 col-md-4">
               <div class="widget">
                 <ul class="links list-unstyled">
-                  <li><a href="#">Email</a></li>
-                  <li><a href="#">Maps</a></li>
-                  <li><a href="#">Telefono</a></li>
-                  <li><a href="#">Lavora Con Noi</a></li>
+                  <li><a href="mailto:atenareclutamento@gmail.com">Email</a></li>
+                  <li><a href="https://maps.app.goo.gl/xfFu8gsQs5epDguT9?g_st=ic">Maps</a></li>
+                  <li><a href="tel:+393510215301">Telefono</a></li>
+                  <li><a href="contact.html">Lavora Con Noi</a></li>
                 </ul>
               </div>
             </div>
